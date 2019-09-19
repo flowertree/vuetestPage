@@ -1,0 +1,348 @@
+.bg {
+  width: 100%;
+  height: 100%;
+  /* background: url('../images/activeEgg/bg.png') no-repeat; */
+  background: url("../images/activeEgg/bg.png");
+  background-size: 100% 100%;
+  position: relative;
+}
+/*音乐播放*/
+.isOn {
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  z-index: 2;
+  left: 0.5rem;
+  top: 0.9rem;
+  -webkit-animation: rotating 1.2s linear infinite;
+  animation: rotating 1.2s linear infinite;
+  background: url("../images/activeEgg/isOn.png") 0 0 no-repeat;
+  background-size: 100%;
+}
+.isOff {
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  z-index: 2;
+  left: 0.5rem;
+  top: 0.9rem;
+  background: url("../images/activeEgg/isOff.png") 0 0 no-repeat;
+  background-size: 100%;
+}
+/*活动规则*/
+.rulePic {
+  width: 3rem;
+  height: 3rem;
+  display: block;
+  position: fixed;
+  top: 0.9rem;
+  right: 0.5rem;
+  z-index: 2;
+}
+.ruleWrap {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+.ruleBox {
+  width: 90%;
+  margin-left: 5%;
+  height: 100%;
+  position: relative;
+}
+.ruleClose {
+  width: 36px;
+  position: absolute;
+  right: 0;
+  top: 0.2rem;
+}
+.ruleUl {
+  overflow: hidden;
+  border-bottom: 1px solid #fff;
+}
+.ruleUl li {
+  float: left;
+  width: 50%;
+  color: #fff;
+  font-size: 0.34rem;
+  text-align: center;
+  line-height: 1.4rem;
+}
+.ruleCont {
+  height: 90%;
+  width: 100%;
+  overflow: auto;
+}
+.liUnder {
+  width: 50%;
+  margin-left: 25%;
+  display: block;
+}
+.someTit {
+  background: #fff;
+  padding: 6px 12px;
+  font-size: 0.34rem;
+  color: #040404;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.someSta {
+  font-size: 0.3rem;
+  color: #fff;
+  margin-left: 0.2rem;
+  line-height: 2;
+}
+.names {
+  color: #fabd02;
+}
+.overHide {
+  overflow: hidden;
+}
+/**活动文字**/
+.activeTitle {
+  width: 100%;
+  height: 250px;
+  background: url("../images/activeEgg/bgtitle.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  right: 0;
+}
+.stage {
+  width: 96%;
+  margin: 0 0.5rem;
+  height: 160px;
+  background: url("../images/activeEgg/stage.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
+  right: 0;
+}
+
+.goldenEgg {
+  width: 9rem;
+  height: 9rem;
+  position: absolute;
+  bottom: 22%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+  animation: a 1000s linear;
+  -webkit-animation: a 1000s linear;
+}
+.egg {
+  width: 6rem;
+  height: 8rem;
+  transform-origin: center;
+  -webkit-transform-origin: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 100%;
+}
+.current-egg-git{
+  width: 200px !important;
+  height: 200px !important;
+  margin-top: -80px;
+  margin-left: -30px;
+  vertical-align: middle;
+}
+.egg img {
+  width: 100%;
+  height: 100%;
+}
+.egg:nth-child(1) {
+  margin-top: 40%;
+  animation: b 1000s linear, zindex 10000ms 0ms infinite linear;
+  -webkit-animation: b 1000s linear, zindex 10000ms 0ms infinite linear;
+}
+.egg:nth-child(2) {
+  margin-top: -6%;
+  margin-left: -14%;
+  animation: b 1000s linear, zindex 10000ms -2500ms infinite linear;
+  -webkit-animation: b 1000s linear, zindex 10000ms -2500ms infinite linear;
+}
+.egg:nth-child(3) {
+  margin-top: -6%;
+  margin-right: -14%;
+  animation: b 1000s linear, zindex 10000ms -5500ms infinite linear;
+  -webkit-animation: b 1000s linear, zindex 10000ms -5500ms infinite linear;
+}
+.paused,
+.paused .egg {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.shade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 5;
+}
+.sorryTitle {
+  width: 15.3rem;
+  height: 6.93rem;
+  margin: 0 auto;
+  margin-top: 6rem;
+  background: url("../images/activeEgg/noWintxt.png") no-repeat;
+  background-size: 100% 100%;
+}
+.sorryPeople {
+  width: 18rem;
+  height: 16rem;
+  margin: 0 auto;
+  margin-top: -4rem;
+  background: url("../images/activeEgg/noWinpeople.png") no-repeat;
+  background-size: 100% 100%;
+}
+.BtnWarp {
+  width: 12rem;
+  height: 3rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  background: url("../images/activeEgg/btnWarp.png") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.BtnWarp span {
+  font-size: 1.25rem;
+  font-weight: bolder;
+  color: #fff;
+  position: absolute;
+  left: 3.5rem;
+  top: 0.6rem;
+}
+.BtnWarp span.countFull{
+  left: 3rem;
+}
+/**中奖**/
+.winbg {
+  height: 26rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  background: url("../images/activeEgg/winRedPage.png") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.winCon {
+  color: #fff;
+  position: absolute;
+  top: 16rem;
+  font-size: 16px;
+  left: 3.6rem;
+  font-weight: bolder;
+  text-align: center;
+  width: 16rem;
+}
+.winCon p {
+  line-height: 30px;
+}
+.wingift {
+  width: 14rem;
+  height: 14rem;
+  background: url(../images/activeEgg/gift.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  right: 3rem;
+  top: 4rem;
+}
+@keyframes a {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(36000deg);
+    -webkit-transform: rotate(36000deg);
+  }
+}
+@-webkit-keyframes a {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(36000deg);
+    -webkit-transform: rotate(36000deg);
+  }
+}
+@keyframes b {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-36000deg);
+    -webkit-transform: rotate(-36000deg);
+  }
+}
+@-webkit-keyframes b {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-36000deg);
+    -webkit-transform: rotate(-36000deg);
+  }
+}
+
+@keyframes zindex {
+  0% {
+    z-index: 1;
+  }
+  25% {
+    z-index: -1;
+  }
+  55% {
+    z-index: -1;
+  }
+  75% {
+    z-index: 1;
+  }
+}
+@-webkit-keyframes zindex {
+  0% {
+    z-index: 1;
+  }
+  25% {
+    z-index: -1;
+  }
+  55% {
+    z-index: -1;
+  }
+  75% {
+    z-index: 1;
+  }
+}
+footer {
+  position: fixed;
+  bottom: 2rem;
+  margin: 0 auto;
+  width: 100%;
+}
+footer p {
+  color: #ffeade;
+  text-align: center;
+  line-height: 24px;
+  font-weight: 600;
+}
+footer > p span {
+  margin: 0 0.5rem;
+}

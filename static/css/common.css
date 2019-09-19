@@ -1,0 +1,41 @@
+*{ -webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent; /* For some Androids */ }
+html,body{height: 12.3rem;font-family:"Helvetica Neue", Helvetica, STHeiTi, sans-serif,arial;-webkit-text-size-adjust:none;word-break:break-all;}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, code, em, img, q, small, strong, dd, dl, dt, li, ol, ul, fieldset, form, label, table, tbody, tr, th, td, input,figure,section{ margin: 0; padding: 0; border: 0;-webkit-box-sizing: border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+body{font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;min-width:320px;margin:0 auto;position:relative;}
+table{border-collapse:collapse;border-spacing:0;}
+img{vertical-align: middle;-ms-interpolation-mode: bicubic;}
+address,caption,cite,code,dfn,em,i,strong,th,var{font-style:normal;font-weight:normal;}
+ol,ul{list-style:none;} caption,th{text-align:left;} q:before,q:after{content:'';}  abbr,acronym{border:0;}
+textarea, input{-webkit-appearance:none;font-family:"Microsoft Yahei",helvetica,arial,sans-serif;-webkit-box-sizing: border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:4px 8px;background: #fff;border-radius:4px;outline: 0;font-size:14px;color:#444;display:block;}
+/*input[type="checkbox"]{-webkit-appearance:checkbox;vertical-align: middle;display:inline-block;}*/
+input[disabled],input:disabled,input.disabled{
+  color: #333333;
+  -webkit-text-fill-color: #333333;
+  -webkit-opacity:1;
+  opacity: 1;
+}
+input[type="radio"]{-webkit-appearance:radio;vertical-align: middle;}
+select {-webkit-appearance: none;width: 100%;height: 46px;padding-left: 5px;box-sizing: border-box;font-family:"Microsoft Yahei",helvetica,arial,sans-serif;border-radius:4px;align-items: center;border:1px solid #cfcfcf;border-image-source: initial;border-image-slice: initial;border-image-width: initial;border-image-outset: initial;border-image-repeat: initial;white-space: pre;-webkit-rtl-ordering: logical;background-color:#fff;cursor: default;font-size:14px;}
+a{text-decoration: none;color:black;}
+.clear:before,.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.clear{
+  zoom: 1;
+}
+.fl{float: left;}
+.fr{float: right;}
+.bordert{border-top: 0.5px solid #e8e8e8;}
+.borderb{border-bottom: 0.5px solid #e8e8e8;}
+@media screen and (min-height:715px){
+  html,body{height: 13.7rem;}
+}
+@media screen and (device-width:375px) and (device-height:812px){
+  html,body{min-height: 15.2rem!important;}
+}
+/*/*-------------------*/
+/*@media screen and (min-height:715px){*/
+  /*html,body{min-height: 16.2rem!important;}*/
+/*}*/

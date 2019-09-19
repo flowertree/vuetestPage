@@ -1,0 +1,272 @@
+.bg {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  position: absolute;
+  background: url("../images/turnplate/bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+/*音乐播放*/
+.isOn {
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  z-index: 2;
+  left: 0.5rem;
+  top: 0.9rem;
+  -webkit-animation: rotating 1.2s linear infinite;
+  animation: rotating 1.2s linear infinite;
+  background: url("../images/turnplate/isOn.png") 0 0 no-repeat;
+  background-size: 100%;
+}
+.isOff {
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  z-index: 2;
+  left: 0.5rem;
+  top: 0.9rem;
+  background: url("../images/turnplate/isOff.png") 0 0 no-repeat;
+  background-size: 100%;
+}
+.activeRules {
+  float: right;
+  padding: 0.3rem 1.3rem;
+  margin-top: 0.9rem;
+  background: rgb(0, 0, 0, 0.75);
+  z-index: 2;
+  color: #fff;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  font-size: 1.15rem;
+}
+.turnTitle {
+  width: 27rem;
+  height: 16.75rem;
+  position: fixed;
+  background: url("../images/turnplate/turnPlateTitle.png") no-repeat;
+  background-size: 100% 100%;
+  top: 3rem;
+  left: -1.2rem;
+}
+/* .wheel-bg{ 
+    width:21.0625rem;
+    height: 21.0625rem;
+    position: fixed;
+    background: url("../images/turnplate/turnBg.png") no-repeat;
+   
+    background-size: 100% 100%;
+    top: 15rem;
+    margin: 0 1rem;}
+.wheel-pointer-box{
+    transform: translate(-50%, -60%);
+} */
+.wheel-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 12rem;
+  margin: 0 1rem;
+  width: 91%;
+}
+.wheel-bg {
+  width: 21.0625rem;
+  height: 21.0625rem;
+  background: url("../images/turnplate/turnBg.png") no-repeat center top;
+  background-size: 100%;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  transition: transform 3s ease;
+}
+.wheel-bg div {
+  text-align: center;
+}
+.wheel-pointer-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -60%);
+  width: 8.3125rem;
+  height: 11.25rem;
+}
+/**转盘指针样式**/
+.wheel-pointer {
+  position: absolute;
+  width: 8.3125rem;
+  height: 11.25rem;
+  background: url("../images/turnplate/pointer.png") no-repeat center top;
+  background-size: 100%;
+  transform-origin: center 60%;
+}
+.prize-list {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.prize-list .prize-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.prize-list .prize-item:first-child {
+  top: 0;
+  left: 4rem;
+  transform: rotate(-40deg);
+}
+.prize-list .prize-item:first-child img {
+  transform: rotate(30deg);
+}
+.prize-list .prize-item:nth-child(2) {
+  /* top: -0.01rem; */
+  left: 11rem;
+  transform: rotate(45deg);
+}
+.prize-list .prize-item:nth-child(2) img {
+  transform: rotate(-30deg);
+}
+.prize-list .prize-item:nth-child(3) {
+  top: 5.9rem;
+  left: 14.6rem;
+  transform: rotate(90deg);
+}
+.prize-list .prize-item:nth-child(3) img {
+  transform: rotate(-90deg);
+}
+.prize-list .prize-item:nth-child(4) {
+  top: 11.75rem;
+  left: 11.4rem;
+  transform: rotate(145deg);
+}
+.prize-list .prize-item:nth-child(4) img {
+  transform: rotate(-150deg);
+}
+.prize-list .prize-item:nth-child(5) {
+  /* top: 9.2125rem;
+    left: 4.4rem;
+    transform: rotate(-160deg); */
+    top: 11.7rem;
+    left: 3.6rem;
+  transform: rotate(220deg);
+}
+.prize-list .prize-item:nth-child(5) img {
+  transform: rotate(150deg);
+}
+.prize-list .prize-item:nth-child(6) {
+  top: 6.3875rem;
+  left: 0.9rem;
+  transform: rotate(-90deg);
+}
+.prize-list .prize-item:nth-child(6) img {
+  transform: rotate(90deg);
+}
+.prize-item {
+  width: 5.875rem;
+  height: 9rem;
+}
+
+.prize-pic img {
+  width: 3.125rem;
+  height: 3.125rem;
+  margin-top: 2.7rem;
+}
+.prize-count {
+  font-size: 0.875rem;
+}
+.prize-type {
+  font-size: 0.95rem;
+  font-weight: bolder;
+}
+.footer {
+  position: fixed;
+  bottom: 1rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.footer p {
+  text-align: center;
+  color: #ed3737ff;
+  font-size: 1.25rem;
+  text-shadow: #fff 1px 0 0, #fff 0 1px 0, #fff -1px 0 0, #fff 0 -1px 0;
+}
+.toast {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 5;
+}
+.toastWin{
+    width:15.625rem;
+    height:23.125rem;
+    background: url('../images/turnplate/win.png') no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    position: relative;
+}
+.wincontxt{
+    color: #fff;
+    position: absolute;
+    top: 6.5rem;
+    left: 0.2rem;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    width: 15rem;
+}
+.wincontxt p{
+    line-height: 30px;
+}
+.winGif{
+    width:9.5rem;
+    height:8.0625rem;
+    background: url('../images/turnplate/gitgBox.png') no-repeat center center;
+    background-size: 100%;
+    margin:1rem 0 0 3rem;
+}
+.BtnWarp {
+    width: 12rem;
+    height: 3rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    background: url("../images/turnplate/btnWarp.png") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+  }
+  .BtnWarp span {
+    font-size: 1.25rem;
+    font-weight: bolder;
+    color: #fff;
+    position: absolute;
+    left: 3.5rem;
+    top: 0.6rem;
+  }
+  .BtnWarp span.countFull{
+    left: 3rem;
+  }
+  .toastSorry {
+      margin-top:5rem;
+  }
+.toastSorry p{
+    color:#fff;
+    text-align: center;
+    font-size: 1.375rem;
+}
+.win_no{
+    width:13.25rem;
+    height:14.9375rem;
+    background: url('../images/turnplate/win_no.png') no-repeat center center;
+    background-size: 100%;
+    margin: 0 auto;
+    margin-top:2rem;
+    margin-bottom:3rem;
+}
